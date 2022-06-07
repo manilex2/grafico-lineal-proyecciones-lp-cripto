@@ -4,4 +4,3 @@ node_modules
 credentials.json
 *.zip
 package-lock.json
-serverless.yml
