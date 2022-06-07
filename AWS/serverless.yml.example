@@ -1,0 +1,23 @@
+# serverless.yml
+
+service: invrtir-grafico-lineal-cripto-lp
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: proy
+  region: us-east-2
+  environment:
+    DB_HOST: Host de Base de Datos
+    DB_USER: Usuario de Base de Datos
+    DB_PASSWORD: Clave de Base de Datos
+    DB_PORT: Puerto de Base de Datos
+    DB_DATABASE: Base de Datos de Cripto
+    TABLE_CRIPTO: Tabla de Proyecciones Largo Plazo
+
+functions:
+  app:
+    handler: index.handler
+    events:
+      - http: GET /
+      - http: 'GET {proxy+}'

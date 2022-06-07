@@ -34,9 +34,9 @@ function totalChart(ctx, extraerdatos){
                         return item.precio;
                     }
                 }),
-                borderColor: '#66C7FF',
-                backgroundColor: '#66C7FF',
-                radius: 3,
+                borderColor: '#4DA2FD',
+                backgroundColor: '#4DA2FD',
+                radius: 2,
                 //Agregar Puntos
             }, {
                 label: 'Forecast',
@@ -45,9 +45,9 @@ function totalChart(ctx, extraerdatos){
                         return item.forecast;
                     }
                 }),
-                borderColor: '#FF9900',
-                backgroundColor: '#FF9900',
-                radius: 3,
+                borderColor: '#9E68E5',
+                backgroundColor: '#9E68E5',
+                radius: 0,
                 //Agregar Puntos
             }, {
                 label: 'Optimista',
@@ -56,9 +56,9 @@ function totalChart(ctx, extraerdatos){
                         return item.optimista;
                     }
                 }),
-                borderColor: '#BDD977',
-                backgroundColor: '#BDD977',
-                radius: 3,
+                borderColor: '#7AC95D',
+                backgroundColor: '#7AC95D',
+                radius: 0,
                 //Agregar Puntos
             }, {
                 label: 'Pesimista',
@@ -67,9 +67,9 @@ function totalChart(ctx, extraerdatos){
                         return item.pesimista;
                     }
                 }),
-                borderColor: '#FF6666',
-                backgroundColor: '#FF6666',
-                radius: 3,
+                borderColor: '#DF8122',
+                backgroundColor: '#DF8122',
+                radius: 0,
                 //Agregar Puntos
             }]
         },
@@ -107,7 +107,7 @@ function totalChart(ctx, extraerdatos){
             },
             elements: {
                 line: {
-                    borderWidth: 3,
+                    borderWidth: 1,
                     fill: false,
                 },
                 point: {
