@@ -26,7 +26,12 @@ function totalChart(ctx, extraerdatos){
         type: 'line',
         data: {
             labels: extraerdatos.map(item => {
-                return item.fecha;
+                var fechaBD = new Date(item.fecha);
+                var year = fechaBD.getFullYear();
+                var mes = fechaBD.getMonth()+1;
+                var dia = fechaBD.getDate();
+                var fechaFormateada = `${year}-${mes}-${dia}`;
+                return fechaFormateada;
             }),
             datasets: [{
                 label: 'Precio Real',

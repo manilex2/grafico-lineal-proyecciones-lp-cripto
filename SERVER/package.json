@@ -1,5 +1,5 @@
 {
-  "name": "grafico-proyeccion-cp-nolineal-crypto",
+  "name": "grafico-proyeccion-lp-crypto",
   "version": "1.0.0",
   "description": "Grafico no lineal que muestra las proyecciones a corto plazo de las criptos",
   "main": "index.js",
