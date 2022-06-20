@@ -36,7 +36,7 @@ function totalChart(ctx, extraerdatos){
             datasets: [{
                 label: 'Precio Real',
                 data: extraerdatos.map((item) => {
-                    if(item.precio > 0){
+                    if (item.precio > 0) {
                         return item.precio;
                     }
                 }),
@@ -47,9 +47,7 @@ function totalChart(ctx, extraerdatos){
             }, {
                 label: 'Forecast',
                 data: extraerdatos.map((item) => {
-                    if(item.forecast > 0){
-                        return item.forecast;
-                    }
+                    return item.forecast;
                 }),
                 borderColor: '#9E68E5',
                 backgroundColor: '#9E68E5',
@@ -58,9 +56,7 @@ function totalChart(ctx, extraerdatos){
             }, {
                 label: 'Optimista',
                 data: extraerdatos.map((item) => {
-                    if(item.optimista > 0){
-                        return item.optimista;
-                    }
+                    return item.optimista;
                 }),
                 borderColor: '#7AC95D',
                 backgroundColor: '#7AC95D',
@@ -69,9 +65,7 @@ function totalChart(ctx, extraerdatos){
             }, {
                 label: 'Pesimista',
                 data: extraerdatos.map((item) => {
-                    if(item.pesimista > 0){
-                        return item.pesimista;
-                    }
+                    return item.pesimista;
                 }),
                 borderColor: '#DF8122',
                 backgroundColor: '#DF8122',
